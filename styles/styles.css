@@ -15,7 +15,7 @@
 h1 {
   color: #FF9D00;
   border-radius: 5px;
-  /*text-shadow: 3px 3px 3px 3px;*/
+  /*text-shadow: 3px 3px 3px 3px; please remove unused / old code */
 }
 span {
   color: white;
@@ -45,7 +45,7 @@ div {
   font-size: 30px;
 
 
-
+/* Please indent code correctly / remove empty white space*/
 
 
     background: -webkit-linear-gradient(90deg, #EC6F66 10%, #F3A183 90%); /* Chrome 10+, Saf5.1+ */
@@ -95,6 +95,7 @@ div {
 	-ms-animation: flash 1s ease 1;
 	-o-animation: flash 1s ease 1;
 	animation: flash 1s ease 1;
+	/* AWESOME!!! */
 }
 
 #player2.enable
@@ -110,6 +111,7 @@ div {
 
 /* animation */
 @-webkit-keyframes flash {
+        /* We'll go over this in a couple weeks, but please include initial state (0%) as well. */
 	50% { opacity: 0; }
 }
 
@@ -128,8 +130,11 @@ div {
 @keyframes flash {
 	50% { opacity: 0; }
 }
+/* Also, since you're transitioning between one state and another, `transition` might be a better option than `animation` */
 
 #green {
   background: green;
 
 }
+
+/* CSS looks great! Try to avoid using ID selectors and prefer class selectors. ID selectors are *very* specific and un-reusable */
